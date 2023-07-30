@@ -11,7 +11,6 @@ const headerHeight = header.offsetHeight;
 
 document.addEventListener('scroll', /*function*/ () => {    // 이름이 없는 함수는 function 생략 가능 ( =>를 추가해 에로우 함수 사용 )
     // 스크롤되는 Y좌표가 headerHeight보다 크다면 다른 스타일링
-    console.log(window.scrollY);
     if (window.scrollY >headerHeight) {
         header.classList.add('header--dark');
     }
