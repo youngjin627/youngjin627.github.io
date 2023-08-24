@@ -16,6 +16,9 @@
 
     /* Size */
     --size-max-width: 1200px;
+
+    /* Divider */
+    --divider-single-wave: url('data:image/svg+sml;utf8')
 }
 
 * {
@@ -145,11 +148,33 @@ button:focus {
 
 /* Home */
 #home {
+    position: relative;
     background-color: var(--color-primary);
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+}
+
+.home__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.home__divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.home__divider .shape-fill {
+    fill: #FFFFFF;
 }
 
 .home__avatar {
@@ -245,8 +270,30 @@ button:focus {
 
 /* Skills */
 #skills {
+    position: relative;
     background-color: var(--color-primary-variant);
     color: var(--color-text);
+}
+
+.skills__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.skills__divider svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 1.3px);
+    height: 60px;
+}
+
+.skills__divider .shape-fill {
+    fill: var(--color-primary);
 }
 
 .skills {
@@ -463,8 +510,29 @@ button:focus {
 
 /* Footer */
 #contact {
+    position: relative;
     background-color: var(--color-primary);
     color: var(--color-text);
+}
+
+.footer__divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.footer__divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.footer__divider .shape-fill {
+    fill: #FFFFFF;
 }
 
 .contact__links {
